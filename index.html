@@ -9,8 +9,23 @@
       h1 {
         color: darkblue;
         background-color: rgb(157, 227, 15);
-        font-style: italic;
+        font-style: sans-serif;
         font-size: 40px;
+      }
+      h2 {
+        color: rgb(37, 24, 125);
+        background-color: aquamarine;
+        font-size: 20px;
+      }
+      h4 {
+        color: red;
+        font-style: sans-serif;
+        font-size: 22px;
+      }
+      body {
+        background-color: rgb(219, 220, 196);
+        font-style: sans-serif;
+        font-size: 20px;
       }
     </style>
     <link rel="stylesheet" href="../css/style.css" />
@@ -23,11 +38,11 @@
     </header>
     <main>
       <section></section>
-      <h2>About</h2>
-      <p style="color: rgb(37, 24, 125)">
+      <h2 class="judul">About</h2>
+      <p>
         Baubau is a second largest city in Southeast Sulawesi Province,
         Indonesia. It is located in Buton island, which is on the southwest cost
-        of Buton. This city attained city status on 2001.
+        of Buton. This city attained its city status on 2001.
       </p>
       <a
         href="https://www.youtube.com/watch?v=EU_wmGbQ9pQ"
@@ -36,14 +51,14 @@
         >Watch Video of Baubau on new tab</a
       >
 
-      <h3>People</h3>
-      <p>
+      <h3 class="judul">People</h3>
+      <span id="teks">
         Baubau is the cultural center of the Butonese people, the former capital
         of Sultanese of Buton. The native Butonese people speaks in Wolio
         language. The population is about 165.000 people.
-      </p>
+      </span>
 
-      <h3>Keep me updated with events in Baubau</h3>
+      <h4>Keep me updated with any events in Baubau!</h4>
       <form>
         <div class="type your name here">
           <label for="type your name here">Username : </label>
@@ -51,22 +66,30 @@
             type="text"
             name="username"
             placeholder="Type your name here"
+            required
           />
         </div>
         <div class="type your email here">
           <label for="type your email here">Email : </label>
-          <input type="email" name="email" placeholder="Type your email here" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Type your email here"
+            required
+          />
         </div>
       </form>
 
-      <h4>Places to visit in Baubau</h4>
-      <ul>
+      <h5>Places to visit in Baubau</h5>
+      <ul class="luar">
         <li>Keraton (Sultanese Palace)</li>
         <li>Kotamara and the dragon statue</li>
         <li>Nirwana Beach</li>
         <li>Batusori</li>
+      </ul>
 
-        <h3>Cultural events in Baubau</h3>
+      <h5>Cultural events in Baubau</h5>
+      <ul class="luar">
         <li>Haroana Baubau</li>
         <li>Independence Day "17-an"</li>
       </ul>
@@ -75,7 +98,7 @@
     <footer>
       <p>@sandyt024</p>
       <p>Updated on July 3rd, 2026</p>
-      <p>saya sudah mengerjakan bagian pertama challenge</p>
+      <p>saya sudah mengerjakan bagian kedua challenge</p>
     </footer>
   </body>
 </html>
